@@ -25,10 +25,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: SonarCloud Scan | packages/crew
+      - name: SonarCloud Scan | app/crew
         uses: SonarSource/sonarcloud-github-action@master
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN_CREW_APP }}
         with:
-          projectBaseDir: app/crew
+          projectBaseDir: apps/crew
