@@ -90,7 +90,7 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         with:
           projectBaseDir: apps/warp-drive-manager
-    sonarcloud-flight-simulator-package:
+  sonarcloud-flight-simulator-package:
     name: SonarCloud flight-simulator package
     runs-on: ubuntu-latest
     steps:
